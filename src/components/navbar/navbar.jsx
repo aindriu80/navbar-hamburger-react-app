@@ -1,14 +1,16 @@
 import React from "react";
 import styled from "styled-components";
 import { Logo } from "../logo/logo";
-const NavbarContainer = styled.div`         
-    width:  100%;      
-    height; 60px;      
-    box-shadow: 0 1px  3px  rgba(15,15,15,0.15)'
-    display: flex;
-    align-items: center;
-    padding: 0 1.5em;
-    `;
+import { NavLinks } from "./navLinks";
+
+const NavbarContainer = styled.div`
+  width: 100%;
+  height: 60px;
+  box-shadow: 0 1px 3px rgba(15, 15, 15, 0.13);
+  display: flex;
+  align-items: center;
+  padding: 0 1.5em;
+`;
 
 const LeftSection = styled.div`
   display: flex;
@@ -17,6 +19,8 @@ const LeftSection = styled.div`
 const MiddleSection = styled.div`
   display: flex;
   flex: 2;
+  height: 100%;
+  justify-content: center;
 `;
 
 const RightSection = styled.div`
@@ -29,7 +33,9 @@ export function NavBar(props) {
       <LeftSection>
         <Logo />
       </LeftSection>
-      <MiddleSection></MiddleSection>
+      <MiddleSection>
+        <NavLinks />
+      </MiddleSection>
       <RightSection></RightSection>
     </NavbarContainer>
   );
