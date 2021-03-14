@@ -19,11 +19,17 @@ const LinkItem = styled.li`
   height: 100%;
   padding: 0 1.1em;
   color: #222;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 14px;
   align-items: center;
   justify-content: center;
   display: flex;
+  border-top: 2px solid transparent;
+  transition: all 200ms ease-in-out;
+
+  &:hover {
+    border-top: 2px solid #2ecc71;
+  }
 `;
 
 const Link = styled.a`
@@ -38,8 +44,14 @@ export function NavLinks(props) {
       <LinksWrapper>
         <LinkItem>
           <Link href="#">About Us</Link>
+        </LinkItem>
+        <LinkItem>
           <Link href="#">How it works</Link>
+        </LinkItem>
+        <LinkItem>
           <Link href="#">Explore</Link>
+        </LinkItem>
+        <LinkItem>
           <Link href="#">Impact</Link>
         </LinkItem>
       </LinksWrapper>

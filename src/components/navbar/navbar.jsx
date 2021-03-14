@@ -1,10 +1,11 @@
 import React from "react";
 import styled from "styled-components";
 import { Logo } from "../logo/logo";
+import { Accessibility } from "./accessibility";
 import { NavLinks } from "./navLinks";
 
 const NavbarContainer = styled.div`
-  width: 100%;
+  // width: 100%;
   height: 60px;
   box-shadow: 0 1px 3px rgba(15, 15, 15, 0.13);
   display: flex;
@@ -36,7 +37,9 @@ export function NavBar(props) {
       <MiddleSection>
         <NavLinks />
       </MiddleSection>
-      <RightSection></RightSection>
+      <RightSection>
+        <Accessibility />
+      </RightSection>
     </NavbarContainer>
   );
 }
