@@ -38,7 +38,7 @@ const Link = styled.a`
   font-size: inherit;
 `;
 
-export function MobileNavLinks(props) {
+export function NavLinks(props) {
   return (
     <NavLinksContainer>
       <LinksWrapper>
